@@ -1,0 +1,21 @@
+
+package collection;
+
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class hall2 {
+public static void main(String[] args) {
+	ArrayList<hall22>a1=new ArrayList<hall22>();
+	a1.add(new hall22("indu",5000,7));
+	a1.add(new hall22("neethu",10000,4));
+	a1.add(new hall22("subin",7000,5));
+	Collections.sort(a1);
+	for(hall22 st:a1){
+		System.out.println(st);
+	}
+	
+}
+}

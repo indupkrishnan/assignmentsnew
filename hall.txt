@@ -1,0 +1,54 @@
+package collection;
+import java.util.*;
+public class hall {
+private String name;
+private double costperday;
+private int capacity;
+
+public hall(String name,double costperday,int capacity){
+	this.name=name;
+	this.costperday=costperday;
+	this.capacity=capacity;
+	
+	}
+
+public String getName() {
+	return name;
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public double getCostperday() {
+	return costperday;
+}
+
+public void setCostperday(double costperday) {
+	this.costperday = costperday;
+}
+
+public int getCapacity() {
+	return capacity;
+}
+
+public void setCapacity(int capacity) {
+	this.capacity = capacity;
+}
+
+@Override
+public String toString() {
+	return "hall [name=" + name + ", costperday=" + costperday + ", capacity=" + capacity + "]";
+}
+public static Comparator<hall> hallcomp=new Comparator<hall>(){
+	public int compare(hall s1,hall s2){
+		double i1=s1.getCostperday();
+		double i2=s1.getCostperday();
+		return (int) (i1-i2);
+
+	}
+};
+}
+
+
+
